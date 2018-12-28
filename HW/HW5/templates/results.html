@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск по корпусу статей из газеты БАМ</title>
+    <form action="/result">
+        Что ищем?
+        <input type="text" name="search">
+        <input type="submit" value="Искать">
+    </form>
+    Вы искали {{ search }}<br>
+    Результатов {{ q }}<br>
+    {% for i in range (0, l) %}
+        <br>
+        {{ p*10+i+1 }}. <a href="{{ res[i][1] }}">{{ res[i][0] }}</a><br>
+        {{ previews[i][0] }}<b> {{ previews[i][1] }} </b>{{ previews[i][2] }}<br>
+    {% endfor %}
+    {% if q>(p+1)*10 %}
+        <br>
+        Следующая страница: <a href="/result?search={{ search }}&page={{ p+1 }}">{{ p+1 }}</a><br>
+    {% endif %}
+    {% for i in range (0, q//10 + 1) %}
+        <a href="/result?search={{ search }}&page={{ i }}">{{ i }}   </a>
+    {% endfor %}
+</head>
+<body>
+
+</body>
+</html>
