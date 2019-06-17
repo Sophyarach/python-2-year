@@ -1,0 +1,543 @@
+This article was originally published in The Robotics Practitioner: The Journal for Robot Builders,
+volume 1, number 2, Spring 1995; trp@footfalls.com
+
+The Art of LEGO Design
+Fred G. Martin1
+March 15, 1995
+
+There is a real need for better resources for both fledgling and intermediate LEGO builders. The plans that the LEGO
+company distributes with its kits are very good at showing how to build specific models, but not so good at teaching how to
+design from one’s own ideas. At the MIT Media Laboratory, we’re working on a project we call the LEGO Constructopedia,
+a hypermedia resource for LEGO designers that will include LEGO building plans, design principles, textual descriptions,
+and rendered animations, all interlinked, indexed, and browsable. The project is just beginning and is still in the conceptual
+stages; this article is my attempt to present some of the content of our proposed LEGO Constructopedia in a more traditional
+form.
+The article begins with an analysis of the structural principles of the LEGO system, continues with a discussion of gears,
+gear reduction, and geartrains, and finishes with a visual assortment of various building tricks or “clichés.” Interspersed
+throughout are numerous diagrams and sample models to illustrate the ideas being presented. I hope that LEGO aficionados
+at all levels from novice to expert will find something of interest here.
+
+Structure
+The Vertical Dimension Relation
+Let’s begin by examining the LEGO brick in detail. Most people realize that the LEGO brick is not based on a cubic form.
+The height of the brick is a larger measure than the length and width (assuming the normal viewpoint of studs on the top).
+But few people know the secret relationship between these dimensions: the vertical unit is precisely 6/5 times the horizontal
+ones. Put another way, a stack of five LEGO bricks is exactly equal in height as a six-stud LEGO beam is long.
+The origins of this obscure relationship remain shrouded in mystery, but it has real practical value: by building structures
+with vertical heights equal to integral horizontal lengths, it is possible to use beams to brace LEGO constructions. This
+technique is greatly facilitated by the one-third-height plates, which allow a number of vertical spacing possibilities.
+The most common trick is to create two horizontal units of space in the vertical dimension by separating two beams with
+two plates (Figure 1). This 1 23 vertical measure is two units of horizontal measure since 1 23 times the conversion factor of 6/5
+1
+
+The Media Laboratory at the Massachusetts Institute of Technology, 20 Ames Street Room E15–320, Cambridge, MA 02139. E-mail:
+fredm@media.mit.edu. This document is Copyright c 1995 by Fred G. Martin. It may be distributed freely in verbatim form provided
+that no fee is collected for its distribution (other than reasonable reproduction costs) and this copyright notice is included. An electronic version of this
+document is available via anonymous FTP from cherupakha.media.mit.edu (Internet 18.85.0.47) in directory pub/people/fredm.
+
+1
+
+Two beams are separated by two 13 -height LEGO
+plates, creating a vertical interval of 1 23 units,
+which is equal to 2 horizontal units. Hence the
+beams can be locked into place using cross-beams
+and connector pegs—the way to make your LEGO
+construction quite sturdy.
+
+Figure 1: Two Beams Locked Using 1 23 Vertical Spacing Relation
+
+Figure 2: Creating Vertical Spacings with Two-Unit and Four-Unit Horizontal Measures
+
+2
+
+The black connector peg vs. the gray connector
+peg: what is the difference? The answer is that the
+black peg is slightly larger, so it fits quite snugly in
+the beam hole, while the smaller gray peg rotates
+freely. Use the black pegs to binding structures together, as suggested by the discussion on locking
+cross-beams, and use the gray peg when making
+hinged joints.
+
+Figure 3: Black Connector Peg Versus Gray Connector Peg
+equals 2. Another useful pairing is 3 13 vertical units (i.e., two beams separated by two beams/bricks and one plate) which
+equals 4 horizontal units (see Figure 2).
+In addition to constructing perfect spacings vertically, it’s possible to make diagonal braces. A 3-unit horizontal spacing
+with a 4-unit horizontal spacing vertically yields a 5-unit diagonal by the Pythagorean relation. This is an example of a
+perfect diagonal spacing, but near-perfect spacings that are “close enough” exist. Experiment, or spend some time thinking
+about the numbers.
+Figure 1 shows the practical application of this dimensional relation: two beams locked together with cross-beams and
+connector pegs. You can use the vertical spacing trick for at least two purposes. First, use it to lock vertical structures
+on LEGO machines in place with beams and connector pegs (see more about connector pegs in Figure 3). Second, create
+vertical spacings that are the right intervals to allow gears to mesh properly (more on this later). This trick will go a long,
+long way in making sturdy, reliable LEGO designs.
+
+Gearing
+Turn on a small DC motor, like the stock LEGO motor, and what do you get? The shaft spins really fast, but with almost no
+torque (turning force). You can easily pinch the shaft with your fingertips and stop the motor from turning.
+Through the magic of gear reduction, this fast-but-weak motor energy can be transformed into a strong but slow rotation,
+suitable for powering wheels, gripper hands, elbow joints, and any other mechanism. Along with structural issues, building
+effective geartrains is the other half of the challenge of creating working LEGO machines.
+
+Counting Gear Teeth
+Gear reduction is achieved by intermeshing gears of different sizes with compatible teeth. Figure 4 shows the effect of
+meshing an 8–tooth gear with a 24–tooth gear. When the 8–tooth gear rotates three times, it has advanced the 24–tooth gear
+one revolution. Hence this configuration produces a 3-to-1 gear reduction ratio.
+More gear reduction can be achieved by meshing gears with greater disparities of teeth count. Using the LEGO 8–tooth
+and the LEGO 40–tooth gears produces a 5-to-1 reduction. But the more general solution is to gang together—or multiply—
+single pairs of gear reduction. Figure 5 shows how two 3-to-1 reductions may be ganged to produce a 9-to-1 reduction, by
+using a shaft that holds a 24–tooth input gear and an 8–tooth output gear.
+The gear ganging concept is the foundation of gear trains. Figure 6 shows a model LEGO gear train that produces a
+243-to-1 reduction from the motor shaft to the output wheel. The example is a bit of overkill—this much reduction will
+3
+
+3 to 1 ratio
+
+8
+
+24
+
+3 turns
+moves by
+24 teeth
+
+1 turn
+moves by
+24 teeth
+
+When the 8–tooth gear rotates 3 times, it advances
+the meshed gear by a total of 24 teeth. Since the
+meshed gear has 24 teeth, it rotates exactly once.
+Hence this configuration produces a 3:1 ratio of
+gear reduction: three turns of the input gear causes
+one turn of the output gear.
+
+Figure 4: 3-to-1 Gear Reduction Ratio
+
+9
+turns
+By ganging together—or multiplying—two 3-to1 gear reductions, a 9-to-1 output reduction can
+be achieved. The key is to use intermediary shafts
+that hold large input gears (e.g., a 24–tooth) and
+small output gears (e.g., an 8–tooth).
+
+Figure 5: 9-to-1 Gear Reduction with Ganging
+
+4
+
+3
+turns
+
+1
+turn
+
+A five-stage reduction
+using 8– and 24–tooth
+gears creates a 243-to-1
+reduction in this sample
+LEGO geartrain. Note
+the need for three parallel planes of motion to
+prevent the gears from
+interfering with one another. Four 23 LEGO
+plates are used to hold
+the beams square and
+keep the axles from binding.
+
+Figure 6: Sample LEGO Geartrain
+produce too slow a final rotation for the typical robot drive train—but it serves to illustrate the point.
+When I present gear reduction to kids, I find it difficult to give a direct explanation of why it works. More precisely, by
+counting teeth it’s evident enough that subsequent gears run slower, but why do they have correspondingly more torque? I
+generally appeal to a vague “energy must be conserved” line of reasoning. Ultimately, there’s no substitute for holding a
+live geartrain in your hand and feeling the power as gear reduction does its work.
+
+The Worm Gear
+The worm gear is a fascinating invention, sort of a Mobius strip in the world of gears. When meshed with a conventional
+round gear, the worm creates an n-to-1 reduction: each revolution of the worm gear advances the opposing gear by just
+one tooth. So, for example, it takes 24 rotations of the worm to revolve the 24–tooth round gear once. This forms quite a
+
+The worm gear is valuable because it acts as a
+gear with one tooth: each revolution of the worm
+gear advances the round gear it’s driving by just
+one tooth. So the worm gear meshed with a 24tooth gear (as pictured) yields a whopping 24 to
+1 reduction. However, the worm gear loses a lot
+of power to friction, so it may not be suitable for
+high performance, main drive applications.
+Figure 7: Using the Worm Gear
+
+5
+
+This diagram shows an arrangement of worm
+gears. At the bottom is the basic worm gear,
+two horizontal LEGO units in length. At the top
+is an unsuccessful attempt to put two worm gears
+on the same shaft. In the middle is the successful
+attempt. When placing multiple worm gears on a
+shaft, the trick is to try all four possible orientations to find the one that works.
+Figure 8: Multiple Worm Gears on One Shaft
+compact gear reduction—it would take about three gangs of the 3-to-1 reduction, forming a 27-to-1 relation, to do the same
+work as a single worm meshed with a 24–tooth round gear.
+There is a drawback, however. The worm gear uses predominantly sliding friction when advancing the teeth of the round
+gear. The teeth of round gears are generally designed to minimize sliding effects when they are meshed with each other, but
+there’s no getting around the problem with worm gears.
+Thus worm gears create more frictional losses than round gears. At higher torques they have a tendency to cause a
+geartrain to stall. If your robot’s too heavy, a worm gear drive may not work well as its main drive.
+Worm gears have another interesting property: they can’t be back-driven. That is, if you rotate the gear being driven by
+a worm, you’ll just push the worm gear forward and back along its axle, but you won’t get it to turn. Take advantage of this
+property. For example, if a worm gear is used to raise an arm lifting a weight, then the arm won’t fall down after power is
+removed from the motor.
+Figure 7 shows how to mesh a worm gear to a round gear, and Figure 8 illustrates putting two LEGO worm gears onto
+the same shaft.
+
+Changing Axis of Rotation
+In a geartrain with only round gears, all of the axles must be mutually parallel. With the worm gear, the output round gear’s
+axis of rotation is at right angles to the worm’s. Two other kinds of gears, the crown gear and bevel gear are available in the
+LEGO kit for changing the axis of rotation within a geartrain.
+The Crown Gear
+The crown gear is a round gear that is specially designed to mesh at right angles to the standard round gear (Figure 9). In the
+diagram, the crown gear is shown meshing with the 8–tooth gear. Meshing to the round 24–tooth and 40–tooth gear is also
+possible, though using the 8–tooth to drive the 24–tooth crown gear is an effective way to build in a gear reduction while
+changing the rotation axis.
+The 24–tooth crown gear is the same size as the standard 24–tooth round gear, so it can be used as a replacement for that
+gear when a parts shortage occurs.
+The Bevel Gear
+The bevel gear is used in pairs to provide a similar function to the crown gear, though without the capability for gear
+reduction. There are two styles of bevel gear: the older style (Figure 10), which is fairly flat, and a newer style, which is
+
+6
+
+The 8–tooth gear, in conjunction with the
+24-tooth crown gear, is used to change
+the axis of rotation in a gear train.
+In this instance, the configuration provides for a vertical shaft output. Horizontal output also possible.
+
+Figure 9: 8–Tooth Gear Meshing with Crown Gear
+
+The bevel gears are used to change the angle of
+rotation of shafts in a gear train with a 1:1 ratio.
+In this case, they are used to effect a change in the
+horizontal plane.
+This picture shows the older-style bevel gears,
+which have limited usefulness due to their relatively high friction and lack of strength. The
+newer bevel gears are thicker and perform much
+better.
+Figure 10: The Bevel Gear
+
+7
+
+The gear driving the gear rack is
+often referred to as the “pinion,”
+as in “rack-and-pinion steering,”
+which uses the transverse motion
+of the gear rack to orient wheels.
+The 8–tooth gear is a good candidate to drive the rack because of
+the gear reduction it achieves—
+one revolution of the gear moves
+the rack by eight teeth.
+
+Figure 11: Using the Gear Rack
+the same diameter but thicker. The old style bevel gear is somewhat flimsy and lossy and is not suitable for delivering larger
+torques. The new bevel gear is a significant improvement.
+Old style bevel gears can be put to good use by serving as stop bushes (Figure 15).
+
+The Gear Rack
+The gear rack is a like a round gear unrolled and laid out flat. When driven by a round gear (the 8–tooth usually works best),
+it traverses back and forth in a linear motion (Figure 11).
+Gear racks can be laid end-to-end to make longer stretches of motion. Underneath a beam driven by gear racks, use the
+smooth-topped LEGO plates as a surface for the beam to slide on.
+
+Practical Hints
+For the remainder of this section on LEGO gearing, I’ll present a number of assorted tips to assist in your geartrain designs.
+Gear Sizing
+It is helpful to know the sizes of the standard gears. This links back to the earlier section on the LEGO dimensional
+relation—creating unit horizontal spacings in the vertical dimension can be used not only to lock structures into place, but
+to mesh gears properly above and below one another.
+Of the four round gears, three of them—the 8–tooth, the 24–tooth, and the 40–tooth, have a radius that is a whole number
+of horizonal LEGO units plus one-half of a unit. Therefore, these three gears form an whole-unit spacing when their radii
+are added—i.e., when they are meshed together in a geartrain.
+For example, the 8–tooth gear has a radius of one-half of a unit, and the 24–tooth, 1 12 units, so when properly meshed
+together, their centers are spaced at two horizontal units. A spacing of two horizontal units is readily available on LEGO
+beams, or can be constructed using the 1 23 vertical spacing relationship discussed earlier. Figure 12 shows how the three
+half-radii gears mesh with one another.
+8
+
+The 8–tooth, 24–tooth, and 40–tooth
+round gears all mesh properly along
+a horizontal beam because they have
+“half unit” radii. For example, the
+8–tooth gear has a radius of 12 LEGO
+units, and the 24–tooth gear, 1 12 units,
+so they mesh at a spacing of two horizontal LEGO units.
+The example shows the 8– and 24–
+tooth gears meshed horizontally at
+two units, and, using the 1 23 vertical spacing trick, vertically as well (a
+common and useful configuration).
+Figure 12: The Half-Radius Round Gears
+The 16–tooth gear, on the other hand, has a radius of one LEGO unit, so it meshes properly only with itself (at the
+standard horizontal unit spacing). A pair of two 16–tooth gears thus requires a space of two LEGO units, which happens
+to be the same interval as the pair of an 8–tooth and a 24–tooth gear. Thus these respective pairs of gears may be easily
+interchanged—a useful trick for adjusting the performance of an existing geartrain without a performing major overhaul
+(Figure 13).
+Odd Gear Spacings
+It’s possible to mesh gears at odd spacings using diagonal mounting. Generally, the gears work better when slightly too far
+apart than when too tight, which causes them to bind.
+Many combinations are possible when creating a space diagonally, and some of them work. For example, and 8– and
+16–tooth gear will function when spaced along the diagonal of one horizontal unit and one vertical unit.
+An interesting exercise is to calculate the effective spacings (in horizontal units) of various diagonal measures using the
+Pythagorean formula, and then see which come close enough to a pairing of gears to be useful. But I suggest experimentation.
+Supporting Axles
+It’s important to keep axles well-supported in a geartrain. Practically, this means using at least two beams to carry the axles.
+More importantly, all beams with common axles running through them must be held together squarely. If the beams not held
+together, the axles will bind and lock up inside the beam-hole bearing mounts.
+As suggested in Figure 14, use the 2 parts, not the 1 parts, to hold beams in place. Figure 6, the sample geartrain,
+uses 23 plates to squarely support the beams.
+Using Stop Bushes
+The stop bushes, or axle holders, are to keep axles from sliding back and forth in their mounts. In addition to the standard
+full-width stop bush, the small pulley wheel and the bevel gear may be put into service (Figure 15).
+
+9
+
+The 16–tooth gear has a radius of 1 LEGO unit, so
+two of them mesh properly together at a spacing of
+two units (left side of diagram). Since an 8– and 24–
+tooth gear also mesh at twounit spacing, these respective
+pairs of gears can be swapped
+for one another in an existing geartrain—a handy way
+to change the performance of
+a geartrain without rebuilding it from scratch.
+Figure 13: The 16–Tooth Gears
+
+It seems like an obvious
+point, but using the 2
+parts to hold beams parallel is quite important
+when the beams will be
+carrying common axles.
+If beams are not held
+squarely, the axles will
+bind and freeze inside
+the beam-hold bearing
+supports.
+
+Figure 14: Locking Parallel Beams Together with 2 Parts
+
+10
+
+The standard 1-LEGO-long stop bush (upper axle,
+front) is not the only part that can act as a bushing
+(axle holder). Use the small pulley wheel (middle
+axle) to act as a half-sized spacer—it also grabs
+tighter than the full bush. In a pinch, the bevel
+gear (upper axle, back) makes a great bushing.
+Finally, the nut-and-bolt parts (lower axle) can be
+used to make a tight connection (if you can find
+them).
+
+Figure 15: The Stop Bushes and Other Parts
+Reducing Noise with Pulley Wheels
+Sometimes a geartrain will be quite noisy. Usually most of the noise is generated by the very first meshing of gears from the
+motor. Here is the ideal place to use a pulley wheel drive (Figure 16).
+Use the small pulley wheel on the motor shaft, and the medium or large pulley wheel on the driven shaft. The ratio of
+the circumferences of two pulleys creates a reduction just like the ratio of the gear teeth of a pair of meshed gears.
+LEGO pulley drive belts—thin rubber bands—are best when used in high speed, low torque situations, because they
+can’t transmit a lot of force. So the first stage is really the best place to use a pulley drive.
+Be careful, though, about using pulleys in a competitive situation. They have a penchant for breaking or falling off at
+the most inopportune moment.
+Chain Link Drive
+Chain link drives are best suited for the final stage of a geartrain—transmitting power down to the axles holding the wheels,
+for example. This is because they can easily deliver the necessary torques, and they impose frictional losses that are
+minimized when rotational speeds are low.
+Getting the right amount of chain links can be tricky. Generally a looser chain works better—chains that are too tight
+will bind up. But too loose a chain will skip when the going gets tough.
+Design Strategy
+When designing a new geartrain into a model, I find it best to work backward from the final drive, rather than forward from
+the motor. This makes sense because usually there is a fair bit of flexibility about where the motor is ultimately mounted,
+but much less in the placement of drive wheels or leg joints (for example).
+So start by mounting the axle shaft that will carry the final drive, put a wheel and gear on it, and start working backward,
+adding gearing until there is enough, and finally mount the motor in a convenient spot.
+When designing a vehicle, don’t forget about the role of the tire in determining the relationship between the rotational
+speed of the final drive axle and the linear speed that is achieved. Small tires act as gear reductions with respect to large
+tires, and this may have an effect on how much gear reduction is necessary. Experiment!
+
+11
+
+There are three sizes of pulley
+wheel: the tiny one, which doubles as a stop bush, the mediumsized one, which doubles as a
+tire hub, and the large-sized one,
+which is sometimes used as a
+steering wheel in official LEGO
+plans.
+
+Figure 16: Using Pulley Wheels
+
+Chain link can be an effective
+way to deliver large amounts of
+torque to a final drive, while providing a gear reduction if needed.
+Chain link works best at the
+slower stages of gearing, and
+with a somewhat slack linkage.
+Use the larger gears—the 8–tooth
+one won’t work very well.
+
+Figure 17: Chain Link Drive
+
+12
+
+On occasion it is necessary to lock a beam to an
+axle. This figure shows how to use a medium
+pulley wheel, which rigidly locks to an axle, to
+hold the beam in place.
+
+Figure 18: Axle Locked Through Beam Using Pulley Wheel
+
+The special “gear mounter” piece is an axle on
+one side and a loose connector peg on the other.
+It can be used to mount gears used as idlers in a
+gear train—used simply to transmit motion or to
+reverse the direction of rotation.
+
+Figure 19: The Gear Mounter Part
+If a geartrain seems to be performing badly, there are a few things to check. Make sure the stop bushes aren’t squeezing
+too hard—there should be some room for the axles to shift back and forth in their mounts. Check that all beams holding
+the axles are squarely locked together. The most common cause of poorly performing geartrains is beam mounts that aren’t
+square.
+To test a geartrain, try driving it backward. Remove the motor, and gently but firmly turn the final drive wheel or shaft.
+If there isn’t too much friction, all of the gears in the train will start moving, with the motor’s gear spinning around rapidly.
+If your geartrain can be readily back-driven, it’s a sure sign that it’s performing well.
+
+LEGO Design Clichés
+This section presents a miscellaneous assortment of ideas in a visual fashion. I’ve come to call these LEGO ideas “clichés”
+because I hope that they become common, everyday knowledge, rather than secrets held by some small group of LEGO
+experts. I find myself inventing them time and again, on the spot, when working with kids helping them with their LEGO
+designs. Part of my intention in writing this article is to collect these clichés and share them with others.
+Browse through this collection and perhaps you will find one or more of these techniques useful in your own LEGO
+designs.
+
+13
+
+This configuration of parts can be used as a compact axle joiner. LEGO now produces a part designed for this purpose, but in lieu of that part, this
+is a useful trick.
+
+Figure 20: An Axle Joiner
+In order to build outward from a vertical wall of axle holes, a
+smaller beam may be mounted with its top studs in the holes of the
+beam wall.
+You will not see this configuration in LEGO’s model plans, because the top studs are slightly too big for the axle holes, and a
+model left in this state will gradually experience solid flow as the
+stressed plastic expands. The official LEGO solution is to use the
+“connector peg with stud” parts (see Figure 22), but this method is
+actually stronger (or at least until the LEGO parts deform).
+Figure 21: One Method of Building Outward from a Vertical Wall
+The recommended way to build outward from a
+beam wall is to use the connector-peg-with-stud
+piece, which is a loose-style connector peg on one
+end and a top stud on the other.
+This method is somewhat weaker than the method
+of simply plugging top studs into axle holes (Figure 21), but will not deform the plastic.
+Figure 22: The Connector-Peg-With-Stud Part
+
+The full-size stop bush can be used in one orientation to hold an axle through a plate hole so that the
+axle can freely rotate. In Figure 24, an additional
+plate is used to trap the axle, but allow it to rotate
+freely.
+
+Figure 23: Using a Stop Bush to Retain an Axle
+14
+
+By using the stop bush to hold an axle in place between two plates, a vertical axle mount can easily
+be created. Depending on the orientation of the
+stop bush, it can be made to either lock the axle in
+place or allow it to rotate freely. In this diagram,
+the axle is allowed to rotate.
+
+Figure 24: Trapping an Axle Between Two Plates Using Stop Bush
+
+In the other orientation, the stop bush locks between four top studs, perfectly centered over the
+axle holes in flat plates. This allows the stop bush
+to lock a plate to an axle.
+
+Figure 25: Using a Stop Bush to Lock an Axle to a Plate
+
+15
+
+The “toggle joint” can be used to
+lock two axles at a variety of odd
+angles. The short axle running
+through the two toggle joints is
+equipped with stop bushes on either end to hold the joint together.
+
+Figure 26: Two Toggle Joints
+
+Here the toggle joint is used to connect two axles at
+right angles. The small pulley wheel is deployed
+on the axle that runs through the toggle joint to
+either lock the axle or allow it to rotate.
+
+Figure 27: Toggle Joint With Free or Locked Axle
+
+16
+
+Several clichés are used
+to construct this caster
+wheel. The vertical axle
+is trapped between two
+plates, but allowed to
+rotate, using the trick
+shown in Figure 24. The
+angled joint down to the
+wheel is done using toggle joints in the configuration suggested in
+Figure 26, and the final
+mounting of the wheel
+is done using the toggle
+joint per Figure 27.
+
+Figure 28: A Caster Design
+
+The “piston rod” part
+(shown in the left foreground) is used twice in
+each mechanism to create a LEGO leg. By
+using a chain drive or
+gear linkage to lock legs
+in sync, a multi-legged
+creature can be designed.
+
+Figure 29: LEGO Legs
+
+17
+
+How many of the design clichés can you find in this robot? Look especially for the vertical spacing trick used to provide
+rigidity to the robot structure.
+The robot, a ping-pong ball collector, was designed by the author and Brian Silverman. Sitting on top of it is the Programmable
+Brick, a robotics controller for kids recently developed by the author and his colleagues at the MIT Media Laboratory.
+Figure 30: LEGO Ping-Pong Ball Collecting Robot
+
+18
+
+Closing
+I hope that this article inspires others to contribute LEGO design clichés from their own vocabulary to a larger collection of
+resources for LEGO builders. By the time this article is printed, we will open a World Wide Web site representing successive
+versions of our LEGO Constructopedia, presenting these ideas in a hypermedia format and soliciting the contributions of
+others.
+
+Acknowledgments
+Steve Ocko guided my early work with the LEGO Technic system, and continues to inspire me with his LEGO creativity
+and his dedication to developing rich learning environments for kids. Mike Plusch and Randy Sargent, both LEGO geniuses,
+shared numerous ideas and insights with me, which I’ve incorporated into this article.
+The LEGO Group is a continuing sponsor of our work at the Media Laboratory. They have provided both generous
+research funding and valued intellectual discourse on a wide range of topics related to children’s learning and effective use
+of the LEGO materials. We are deeply grateful to their support of our work. Any criticism I make about their products
+should be taken in the spirit of making a great thing even better.
+
+About the Author
+Fred Martin has been developing educational robotics technologies at the MIT Media Laboratory since 1986, and is a
+co-founder of the annual MIT LEGO Robot Design Competition.
+Fred is interested in robotics for fun and as a vehicle for exploring sensing, control, and engineering design. He has been
+teaching robotics to kids, teenagers, college students, and adults for nearly ten years and hasn’t gotten tired of it yet.
+Currently a Postdoctoral Fellow at the Media Lab, Fred is working on a robotics textbook aimed at undergraduate
+engineering students. Tentatively entitled The Art of Robotics: A Hands-On Introduction to Engineering, the book is
+scheduled to be published in the fall of 1996 by Benjamin/Cummings. This article will form the basis of an expanded chapter
+on LEGO design in the text.
+Fred welcomes any comments on this article. He can be reached at fredm@media.mit.edu. The URL for the
+LEGO Constructopedia WWW site is:
+http://el.www.media.mit.edu/groups/el/Projects/constructopedia
+
+19
+
+
